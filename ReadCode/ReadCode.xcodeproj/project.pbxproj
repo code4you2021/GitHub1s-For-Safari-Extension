@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1855A1F8265BD36C0013EB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A1F7265BD36C0013EB90 /* AppDelegate.swift */; };
+		1855A1FB265BD36C0013EB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1855A1F9265BD36C0013EB90 /* Main.storyboard */; };
+		1855A1FD265BD36C0013EB90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A1FC265BD36C0013EB90 /* ViewController.swift */; };
+		1855A1FF265BD36D0013EB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1855A1FE265BD36D0013EB90 /* Assets.xcassets */; };
+		1855A20A265BD36D0013EB90 /* ReadCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A209265BD36D0013EB90 /* ReadCodeTests.swift */; };
+		1855A215265BD36D0013EB90 /* ReadCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A214265BD36D0013EB90 /* ReadCodeUITests.swift */; };
+		1855A21C265BD36D0013EB90 /* ReadCode Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1855A21B265BD36D0013EB90 /* ReadCode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1855A221265BD36D0013EB90 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1855A220265BD36D0013EB90 /* Cocoa.framework */; };
+		1855A224265BD36D0013EB90 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A223265BD36D0013EB90 /* SafariExtensionHandler.swift */; };
+		1855A226265BD36D0013EB90 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855A225265BD36D0013EB90 /* SafariExtensionViewController.swift */; };
+		1855A229265BD36D0013EB90 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1855A228265BD36D0013EB90 /* script.js */; };
+		1855A22B265BD36D0013EB90 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1855A22A265BD36D0013EB90 /* ToolbarItemIcon.pdf */; };
+		1855A22E265BD36D0013EB90 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1855A22C265BD36D0013EB90 /* SafariExtensionViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1855A206265BD36D0013EB90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1855A1EB265BD36C0013EB90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1855A1F2265BD36C0013EB90;
+			remoteInfo = ReadCode;
+		};
+		1855A211265BD36D0013EB90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1855A1EB265BD36C0013EB90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1855A1F2265BD36C0013EB90;
+			remoteInfo = ReadCode;
+		};
+		1855A21D265BD36D0013EB90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1855A1EB265BD36C0013EB90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1855A21A265BD36D0013EB90;
+			remoteInfo = "ReadCode Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1855A236265BD36D0013EB90 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1855A21C265BD36D0013EB90 /* ReadCode Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1855A1F3265BD36C0013EB90 /* ReadCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1855A1F6265BD36C0013EB90 /* ReadCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReadCode.entitlements; sourceTree = "<group>"; };
+		1855A1F7265BD36C0013EB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1855A1FA265BD36C0013EB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1855A1FC265BD36C0013EB90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1855A1FE265BD36D0013EB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1855A200265BD36D0013EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1855A205265BD36D0013EB90 /* ReadCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1855A209265BD36D0013EB90 /* ReadCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadCodeTests.swift; sourceTree = "<group>"; };
+		1855A20B265BD36D0013EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1855A210265BD36D0013EB90 /* ReadCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1855A214265BD36D0013EB90 /* ReadCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadCodeUITests.swift; sourceTree = "<group>"; };
+		1855A216265BD36D0013EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1855A21B265BD36D0013EB90 /* ReadCode Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReadCode Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1855A220265BD36D0013EB90 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1855A223265BD36D0013EB90 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		1855A225265BD36D0013EB90 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		1855A228265BD36D0013EB90 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		1855A22A265BD36D0013EB90 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		1855A22D265BD36D0013EB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		1855A22F265BD36D0013EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1855A230265BD36D0013EB90 /* ReadCode_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReadCode_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1855A1F0265BD36C0013EB90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A202265BD36D0013EB90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A20D265BD36D0013EB90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A218265BD36D0013EB90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1855A221265BD36D0013EB90 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1855A1EA265BD36C0013EB90 = {
+			isa = PBXGroup;
+			children = (
+				1855A1F5265BD36C0013EB90 /* ReadCode */,
+				1855A208265BD36D0013EB90 /* ReadCodeTests */,
+				1855A213265BD36D0013EB90 /* ReadCodeUITests */,
+				1855A222265BD36D0013EB90 /* ReadCode Extension */,
+				1855A21F265BD36D0013EB90 /* Frameworks */,
+				1855A1F4265BD36C0013EB90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1855A1F4265BD36C0013EB90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1855A1F3265BD36C0013EB90 /* ReadCode.app */,
+				1855A205265BD36D0013EB90 /* ReadCodeTests.xctest */,
+				1855A210265BD36D0013EB90 /* ReadCodeUITests.xctest */,
+				1855A21B265BD36D0013EB90 /* ReadCode Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1855A1F5265BD36C0013EB90 /* ReadCode */ = {
+			isa = PBXGroup;
+			children = (
+				1855A1F6265BD36C0013EB90 /* ReadCode.entitlements */,
+				1855A1F7265BD36C0013EB90 /* AppDelegate.swift */,
+				1855A1F9265BD36C0013EB90 /* Main.storyboard */,
+				1855A1FC265BD36C0013EB90 /* ViewController.swift */,
+				1855A1FE265BD36D0013EB90 /* Assets.xcassets */,
+				1855A200265BD36D0013EB90 /* Info.plist */,
+			);
+			path = ReadCode;
+			sourceTree = "<group>";
+		};
+		1855A208265BD36D0013EB90 /* ReadCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1855A209265BD36D0013EB90 /* ReadCodeTests.swift */,
+				1855A20B265BD36D0013EB90 /* Info.plist */,
+			);
+			path = ReadCodeTests;
+			sourceTree = "<group>";
+		};
+		1855A213265BD36D0013EB90 /* ReadCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1855A214265BD36D0013EB90 /* ReadCodeUITests.swift */,
+				1855A216265BD36D0013EB90 /* Info.plist */,
+			);
+			path = ReadCodeUITests;
+			sourceTree = "<group>";
+		};
+		1855A21F265BD36D0013EB90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1855A220265BD36D0013EB90 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1855A222265BD36D0013EB90 /* ReadCode Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1855A223265BD36D0013EB90 /* SafariExtensionHandler.swift */,
+				1855A225265BD36D0013EB90 /* SafariExtensionViewController.swift */,
+				1855A22C265BD36D0013EB90 /* SafariExtensionViewController.xib */,
+				1855A22F265BD36D0013EB90 /* Info.plist */,
+				1855A230265BD36D0013EB90 /* ReadCode_Extension.entitlements */,
+				1855A227265BD36D0013EB90 /* Resources */,
+			);
+			path = "ReadCode Extension";
+			sourceTree = "<group>";
+		};
+		1855A227265BD36D0013EB90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1855A228265BD36D0013EB90 /* script.js */,
+				1855A22A265BD36D0013EB90 /* ToolbarItemIcon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1855A1F2265BD36C0013EB90 /* ReadCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1855A237265BD36D0013EB90 /* Build configuration list for PBXNativeTarget "ReadCode" */;
+			buildPhases = (
+				1855A1EF265BD36C0013EB90 /* Sources */,
+				1855A1F0265BD36C0013EB90 /* Frameworks */,
+				1855A1F1265BD36C0013EB90 /* Resources */,
+				1855A236265BD36D0013EB90 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1855A21E265BD36D0013EB90 /* PBXTargetDependency */,
+			);
+			name = ReadCode;
+			productName = ReadCode;
+			productReference = 1855A1F3265BD36C0013EB90 /* ReadCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1855A204265BD36D0013EB90 /* ReadCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1855A23A265BD36D0013EB90 /* Build configuration list for PBXNativeTarget "ReadCodeTests" */;
+			buildPhases = (
+				1855A201265BD36D0013EB90 /* Sources */,
+				1855A202265BD36D0013EB90 /* Frameworks */,
+				1855A203265BD36D0013EB90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1855A207265BD36D0013EB90 /* PBXTargetDependency */,
+			);
+			name = ReadCodeTests;
+			productName = ReadCodeTests;
+			productReference = 1855A205265BD36D0013EB90 /* ReadCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1855A20F265BD36D0013EB90 /* ReadCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1855A23D265BD36D0013EB90 /* Build configuration list for PBXNativeTarget "ReadCodeUITests" */;
+			buildPhases = (
+				1855A20C265BD36D0013EB90 /* Sources */,
+				1855A20D265BD36D0013EB90 /* Frameworks */,
+				1855A20E265BD36D0013EB90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1855A212265BD36D0013EB90 /* PBXTargetDependency */,
+			);
+			name = ReadCodeUITests;
+			productName = ReadCodeUITests;
+			productReference = 1855A210265BD36D0013EB90 /* ReadCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1855A21A265BD36D0013EB90 /* ReadCode Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1855A233265BD36D0013EB90 /* Build configuration list for PBXNativeTarget "ReadCode Extension" */;
+			buildPhases = (
+				1855A217265BD36D0013EB90 /* Sources */,
+				1855A218265BD36D0013EB90 /* Frameworks */,
+				1855A219265BD36D0013EB90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReadCode Extension";
+			productName = "ReadCode Extension";
+			productReference = 1855A21B265BD36D0013EB90 /* ReadCode Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1855A1EB265BD36C0013EB90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1855A1F2265BD36C0013EB90 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					1855A204265BD36D0013EB90 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1855A1F2265BD36C0013EB90;
+					};
+					1855A20F265BD36D0013EB90 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1855A1F2265BD36C0013EB90;
+					};
+					1855A21A265BD36D0013EB90 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 1855A1EE265BD36C0013EB90 /* Build configuration list for PBXProject "ReadCode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1855A1EA265BD36C0013EB90;
+			productRefGroup = 1855A1F4265BD36C0013EB90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1855A1F2265BD36C0013EB90 /* ReadCode */,
+				1855A204265BD36D0013EB90 /* ReadCodeTests */,
+				1855A20F265BD36D0013EB90 /* ReadCodeUITests */,
+				1855A21A265BD36D0013EB90 /* ReadCode Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1855A1F1265BD36C0013EB90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1855A1FF265BD36D0013EB90 /* Assets.xcassets in Resources */,
+				1855A1FB265BD36C0013EB90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A203265BD36D0013EB90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A20E265BD36D0013EB90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A219265BD36D0013EB90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1855A22E265BD36D0013EB90 /* SafariExtensionViewController.xib in Resources */,
+				1855A22B265BD36D0013EB90 /* ToolbarItemIcon.pdf in Resources */,
+				1855A229265BD36D0013EB90 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1855A1EF265BD36C0013EB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1855A1FD265BD36C0013EB90 /* ViewController.swift in Sources */,
+				1855A1F8265BD36C0013EB90 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A201265BD36D0013EB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1855A20A265BD36D0013EB90 /* ReadCodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A20C265BD36D0013EB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1855A215265BD36D0013EB90 /* ReadCodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1855A217265BD36D0013EB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1855A226265BD36D0013EB90 /* SafariExtensionViewController.swift in Sources */,
+				1855A224265BD36D0013EB90 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1855A207265BD36D0013EB90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1855A1F2265BD36C0013EB90 /* ReadCode */;
+			targetProxy = 1855A206265BD36D0013EB90 /* PBXContainerItemProxy */;
+		};
+		1855A212265BD36D0013EB90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1855A1F2265BD36C0013EB90 /* ReadCode */;
+			targetProxy = 1855A211265BD36D0013EB90 /* PBXContainerItemProxy */;
+		};
+		1855A21E265BD36D0013EB90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1855A21A265BD36D0013EB90 /* ReadCode Extension */;
+			targetProxy = 1855A21D265BD36D0013EB90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1855A1F9265BD36C0013EB90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1855A1FA265BD36C0013EB90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1855A22C265BD36D0013EB90 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1855A22D265BD36D0013EB90 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1855A231265BD36D0013EB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1855A232265BD36D0013EB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1855A234265BD36D0013EB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ReadCode Extension/ReadCode_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 102;
+				DEVELOPMENT_TEAM = TB2Q2TJJE4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "ReadCode Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.yidian.ReadCode.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1855A235265BD36D0013EB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ReadCode Extension/ReadCode_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 102;
+				DEVELOPMENT_TEAM = TB2Q2TJJE4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "ReadCode Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.yidian.ReadCode.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1855A238265BD36D0013EB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReadCode/ReadCode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 102;
+				DEVELOPMENT_TEAM = TB2Q2TJJE4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ReadCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = one.yidian.ReadCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1855A239265BD36D0013EB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReadCode/ReadCode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 102;
+				DEVELOPMENT_TEAM = TB2Q2TJJE4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ReadCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = one.yidian.ReadCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1855A23B265BD36D0013EB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TB2Q2TJJE4;
+				INFOPLIST_FILE = ReadCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = one.yidian.ReadCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadCode.app/Contents/MacOS/ReadCode";
+			};
+			name = Debug;
+		};
+		1855A23C265BD36D0013EB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TB2Q2TJJE4;
+				INFOPLIST_FILE = ReadCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = one.yidian.ReadCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadCode.app/Contents/MacOS/ReadCode";
+			};
+			name = Release;
+		};
+		1855A23E265BD36D0013EB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TB2Q2TJJE4;
+				INFOPLIST_FILE = ReadCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.yidian.ReadCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ReadCode;
+			};
+			name = Debug;
+		};
+		1855A23F265BD36D0013EB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TB2Q2TJJE4;
+				INFOPLIST_FILE = ReadCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.yidian.ReadCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ReadCode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1855A1EE265BD36C0013EB90 /* Build configuration list for PBXProject "ReadCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1855A231265BD36D0013EB90 /* Debug */,
+				1855A232265BD36D0013EB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1855A233265BD36D0013EB90 /* Build configuration list for PBXNativeTarget "ReadCode Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1855A234265BD36D0013EB90 /* Debug */,
+				1855A235265BD36D0013EB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1855A237265BD36D0013EB90 /* Build configuration list for PBXNativeTarget "ReadCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1855A238265BD36D0013EB90 /* Debug */,
+				1855A239265BD36D0013EB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1855A23A265BD36D0013EB90 /* Build configuration list for PBXNativeTarget "ReadCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1855A23B265BD36D0013EB90 /* Debug */,
+				1855A23C265BD36D0013EB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1855A23D265BD36D0013EB90 /* Build configuration list for PBXNativeTarget "ReadCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1855A23E265BD36D0013EB90 /* Debug */,
+				1855A23F265BD36D0013EB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1855A1EB265BD36C0013EB90 /* Project object */;
+}
